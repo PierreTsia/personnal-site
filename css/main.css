@@ -318,8 +318,12 @@ a.mobile-btn{
    -moz-box-sizing: border-box;
 	box-sizing: border-box;
 	display: table-cell;
-	width:33.3333%;
+	width:50.00%;
+	max-width: 800px;
+	
 }
+
+
 
 
 
