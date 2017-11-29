@@ -58,7 +58,8 @@
 
 
 a, a:hover, a:active, a:visited, a:focus {
-    text-decoration: none;
+	text-decoration: none;
+	color : #1675B9;
 }
 
 
@@ -181,13 +182,18 @@ iframe{
 
 	.block-background-image.large{
 			padding: 200px 0;
+			
 	}
 	
 	
 	.block-background-image.medium{
 			padding: 100px 0;
+			padding-bottom: 0px !important;
 	}
 	
+	section {
+		padding-bottom: 0px !important;
+	}
 	
 
 

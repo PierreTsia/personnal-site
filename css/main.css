@@ -126,7 +126,9 @@
 
 /*Teaser section*/
 
-
+.particle {
+	
+}
 .block-teaser{
 	margin-top:-65px;
 }
@@ -1632,14 +1634,14 @@ ul.latest-post a i {
 
 
 .socials.round li a{
-	color:#777777;
+	color:#313131;
 
 	
 }
 
 .socials.round li a i{
 	font-size:30px;
-	color:#f0f0f0;
+	color:#313131;
 	margin-right:5px;
 }
 
