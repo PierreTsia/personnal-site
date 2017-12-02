@@ -127,7 +127,7 @@
 /*Teaser section*/
 
 .particle {
-	
+
 }
 .block-teaser{
 	margin-top:-65px;
@@ -367,6 +367,15 @@ a.mobile-btn{
 
 .socials li a {
     color: #199cdb;
+}
+
+.socials li a i{
+	font-size:1.5em;
+
+}
+.socials {
+	text-align: left;
+
 }
 
 
@@ -717,6 +726,10 @@ a.mobile-btn{
     width: 80%;
 }
 
+
+.block-background-image.medium{
+	height:70vh;
+}
 
 .testi-details .td {
     display: none;
@@ -1458,7 +1471,7 @@ ul.latest-post a i {
 	position:relative;
 }
 
-.contact-form input[type="text"], .contact-form textarea, .reply-form input[type="text"], .reply-form textarea {
+.contact-form fieldset input[type="text"], .contact-form fieldset textarea, .reply-form input[type="text"], .reply-form textarea, #tel, #name, #email {
     background: rgba(255, 255, 255, .10);
     border: 1px solid rgba(255, 255, 255, 0);
     color: #ffffff;
@@ -1625,7 +1638,11 @@ ul.latest-post a i {
 	max-width:50%;
 	
 }
-
+ul.socials.round.pb-20{
+	
+		text-align: center;
+		
+	}
 
 .socials.round li{
 	margin-right:15px;
@@ -1900,7 +1917,7 @@ ul.latest-post a i {
 @media only screen and (max-width:479px) {
 	input, textarea{-webkit-appearance: none;-webkit-border-radius:0;}
 	.block-background-image{background-attachment: scroll;background-position:top center !important;}
-	.block-teaser h1{font-size:40px;}
+	.block-teaser h1{font-size:40px;line-height: 1;}
 	h2.title{font-size:28px;}
 	.img-profile img, .menu li a i{display:none;}
 	p.short-email{text-align:left;margin-top:10px;}
