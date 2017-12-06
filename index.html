@@ -69,6 +69,7 @@
 
 
 							<div class="col-sm-12 ">
+								<img src="" alt="">
 								<h1 class="white ">Pierre Tsiakkaros</h1>
 								<h3 class="mt-20 white mb-200"> Développeur Web Junior</h3>
 							</div>
@@ -171,12 +172,12 @@
 					<div class="col-sm-5 t-center">
 						<ul class="menu second">
 							<li>
-								<a class="scroll" href="#portfolio">Projets
-									<i class="icon-camera"></i>
+								<a class="scroll" href="#projets">Projets
+									<i class="icon-code"></i>
 								</a>
 							</li>
 							<li>
-								<a class="scroll" href="#blog">Blog
+								<a class="scroll" href="#testimonials">Témoignages
 									<i class="icon-chat"></i>
 								</a>
 							</li>
@@ -225,7 +226,7 @@
 						<br> Par envie d'exercer un métier à la fois technique et créatif, qui se réinvente en permanence et dans lequel on n'a
 						jamais fini d'apprendre.
 						<br>
-						<br> ... et parce que savoir coder, c'est, à ma connaissance, ce qui se rapproche le plus du fait d'avoir un super-pouvoir
+						<br> ... et parce que savoir coder, c'est, à ma connaissance, ce qui se rapproche le plus du fait d'de posséder un super-pouvoir
 						!
 					</p>
 
@@ -780,7 +781,7 @@
 
 
 		<!--Block content-->
-		<div class="block-content t-center block-background-image medium overlay" data-background="img/parallax/js-pic.jpg">
+		<div id="testimonials" class="block-content t-center block-background-image medium overlay" data-background="img/parallax/js-pic.jpg">
 
 			<div class="block-testi">
 
@@ -843,7 +844,7 @@
 										régulièrement sur des projets personnels et s'entraîne sur codewars en parallèle de la formation, qui a déjà un
 										rythme très soutenu. Il deviendra un excellent développeur, j'en suis convaincu.</blockquote>
 									<a href="https://www.linkedin.com/in/victorleduc/">
-										<h6>Victor Leduc</h6>
+										<h6> Victor Leduc</h6>
 									</a>
 									<span> Formateur Web | Wild Code School</span>
 								</div>
@@ -876,7 +877,7 @@
 
 
 	<!--Portfolio section-->
-	<section id="portfolio" class="portfolio bg-grey  pt-100 pb-50">
+	<section id="projets" class="portfolio bg-white  pt-100 pb-50">
 
 		<!--Block content-->
 		<div class="block-content">
@@ -889,7 +890,7 @@
 					<div class="col-md-12">
 
 						<div class="block-title mb-60">
-							<h2 class="title">Portfolio</h2>
+							<h2 class="title">Projets</h2>
 						</div>
 					</div>
 				</div>
@@ -907,16 +908,13 @@
 							<div class="block-filter mb-50">
 								<ul class="filter">
 									<li>
-										<a class="active" href="#" data-filter="all">All</a>
+										<a class="active" href="#" data-filter="all">Tout voir</a>
 									</li>
 									<li>
-										<a href="#" data-filter="web">Web Design</a>
+										<a href="#" data-filter="projets">Projets Wild Code School</a>
 									</li>
 									<li>
-										<a href="#" data-filter="graphic">Graphic Design</a>
-									</li>
-									<li>
-										<a href="#" data-filter="motion">Motion Graphic</a>
+										<a href="#" data-filter="hackathon">Hackathon</a>
 									</li>
 								</ul>
 
@@ -933,15 +931,30 @@
 
 						<div class="col-md-3 col-sm-6  masonry item-block">
 
-							<div class="item web">
-								<a href="project_single.html">
+							<div class="item projets">
+								<a href="img/portfolio/parc-aquatique.png" class="popup">
 									<div class="desc">
-										<span>in web design</span>
-										<h5>Project Name</h5>
-
+										<span class="current label label-primary"> </span>
+										<span>Projet Wild Code School n°3</span>
+										<h5>Parc Aquatique du Perche </h5>
 									</div>
 
-									<img src="img/portfolio/1.jpg" alt="">
+									<img src="img/portfolio/parc-aquatique.png" alt="">
+								</a>
+
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6  masonry item-block">
+
+							<div class="item projets">
+								<a href="https://github.com/PierreTsia/Wild-Battleship">
+									<div class="desc">
+										<span class="current label label-primary"> </span>
+										<span>Projet Wild Code School n°2</span>
+										<h5>Wild Battleship</h5>
+									</div>
+
+									<img src="img/portfolio/wild-battleship.png" alt="">
 								</a>
 
 							</div>
@@ -949,32 +962,16 @@
 
 						<div class="col-md-3 col-sm-6  masonry item-block">
 
-							<div class=" item web ">
+							<div class=" item projets ">
 								<a href="img/portfolio/2.jpg" class="popup">
 									<div class="desc">
-										<span>in web design</span>
-										<h5>Project Name</h5>
+										<span class="current label label-primary"> </span>
+										<span>Projet Wild Code School n°1</span>
+										<h5>Co-Working La Loupe</h5>
 
 									</div>
 
-									<img src="img/portfolio/2.jpg" alt="">
-								</a>
-
-							</div>
-						</div>
-
-
-						<div class="col-md-3 col-sm-6  masonry item-block">
-
-							<div class=" item graphic">
-								<a href="img/portfolio/3.jpg" class="popup">
-									<div class="desc">
-										<span>in graphic design</span>
-										<h5>Project Name</h5>
-
-									</div>
-
-									<img src="img/portfolio/3.jpg" alt="">
+									<img src="img/portfolio/coworking.png" alt="">
 								</a>
 
 							</div>
@@ -982,106 +979,44 @@
 
 
 
+
+
+
 						<div class="col-md-3 col-sm-6  masonry item-block">
 
-							<div class=" item graphic">
-								<a href="img/portfolio/4.jpg" class="popup">
+							<div class="item hackathon">
+								<a href="https://github.com/PierreTsia/wildXtmas" class="popup">
 									<div class="desc graphic">
-										<span>in graphic design</span>
-										<h5>Project Name</h5>
+										<span class="current label label-danger"> </span>
+										<span>Hackathon Wild Code School n°2</span>
+										<h5>Wild Christmas</h5>
 
 									</div>
 
-									<img src="img/portfolio/4.jpg" alt="">
+									<img src="img/portfolio/wildxmas.png" alt="">
+								</a>
+
+							</div>
+						</div>
+
+						<div class="col-md-3 col-sm-6  masonry item-block">
+
+							<div class="item hackathon">
+								<a href="https://github.com/PierreTsia/pokedex" class="popup">
+									<div class="desc graphic">
+										<span class="current label label-danger"> </span>
+										<span>Hackathon Wild Code School n°1</span>
+										<h5>Pokedex</h5>
+
+									</div>
+
+									<img src="img/portfolio/pokedex.png" alt="">
 								</a>
 
 							</div>
 						</div>
 
 
-						<div class="col-md-3 col-sm-6 masonry item-block">
-
-							<div class=" item graphic">
-								<a href="img/portfolio/5.jpg" class="popup">
-									<div class="desc">
-										<span>in graphic design</span>
-										<h5>Project Name</h5>
-
-									</div>
-
-									<img src="img/portfolio/5.jpg" alt="">
-								</a>
-
-							</div>
-						</div>
-
-
-
-						<div class="col-md-3 col-sm-6 masonry item-block">
-
-							<div class=" item web">
-								<a href="img/portfolio/6.jpg" class="popup">
-									<div class="desc">
-										<span>in web design</span>
-										<h5>Project Name</h5>
-
-									</div>
-
-									<img src="img/portfolio/6.jpg" alt="">
-								</a>
-
-							</div>
-						</div>
-
-
-						<div class="col-md-3 col-sm-6 masonry item-block">
-
-							<div class=" item motion">
-								<a class="popup-vimeo" href="https://vimeo.com/67429593">
-									<div class="desc">
-										<span>in motion design</span>
-										<h5>Project Name</h5>
-
-									</div>
-
-									<img src="img/portfolio/7.jpg" alt="">
-								</a>
-
-							</div>
-						</div>
-
-						<div class="col-md-3 col-sm-6 masonry item-block">
-
-							<div class=" item motion">
-								<a class="popup-youtube" href="https://www.youtube.com/watch?v=gTFljCRnGN4">
-									<div class="desc">
-										<span>in motion design</span>
-										<h5>Project Name</h5>
-
-									</div>
-
-									<img src="img/portfolio/9.jpg" alt="">
-								</a>
-
-							</div>
-						</div>
-
-
-						<div class="col-md-3 col-sm-6 masonry item-block">
-
-							<div class=" item web">
-								<a href="http://www.mutationmedia.net/" target="_blank">
-									<div class="desc">
-										<span>in web design</span>
-										<h5>Project Name</h5>
-
-									</div>
-
-									<img src="img/portfolio/10.jpg" alt="">
-								</a>
-
-							</div>
-						</div>
 
 					</div>
 					<!--End row-->
@@ -1101,218 +1036,7 @@
 	</section>
 	<!--End portfolio section-->
 
-	<!--Blog section-->
-	<section id="blog" class="blog pt-100">
 
-		<!--Block content-->
-		<div class="block-content">
-
-
-			<!--Container-->
-			<div class="container ">
-
-				<!--Row-->
-				<div class="row">
-					<div class="col-md-12">
-
-						<div class="block-title mb-60">
-							<h2 class="title">Latest News</h2>
-						</div>
-					</div>
-				</div>
-				<!--End row-->
-
-				<!--Row-->
-				<div class="row">
-
-
-					<div class="block-posts">
-
-						<div class="col-md-4 col-sm-4  ">
-
-
-							<!--Post-->
-							<div class="post latest">
-								<!--Post media-->
-								<div class="post-media">
-									<img src="img/blog/1.jpg" alt="">
-								</div>
-								<!--End post media-->
-
-								<!--Post details-->
-								<div class="post-details latest pb-20">
-									<h4 class="uppercase pt-15 pb-15">
-										<a href="blog_single.html">Raw Introduction</a>
-									</h4>
-
-									<!--Post meta-->
-									<div class="post-meta t-center pt-10 pb-10">
-										<ul class="clearfix">
-											<li class="date">03 May</li>
-											<li>
-												<i class="icon-user-1"></i>
-												<span>by
-													<a href="#"> admin</a>
-												</span>
-											</li>
-											<li>
-												<i class="icon-comment"></i>
-												<span>Comments
-													<a href="#"> (2)</a>
-												</span>
-											</li>
-										</ul>
-									</div>
-									<!--End post meta-->
-
-
-									<p class="pt-15 pb-20">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-
-
-									<a class="more" href="blog_single.html">read more
-										<span>&rarr;</span>
-									</a>
-
-
-								</div>
-								<!--End post details-->
-
-							</div>
-							<!--End post-->
-						</div>
-
-						<div class="col-md-4 col-sm-4">
-
-
-							<!--Post-->
-							<div class="post latest">
-								<!--Post media-->
-								<div class="post-media">
-									<img src="img/blog/2.jpg" alt="">
-								</div>
-								<!--End post media-->
-
-								<!--Post details-->
-								<div class="post-details latest pb-20">
-									<h4 class="uppercase pt-15 pb-15">
-										<a href="blog_single.html">Mobile Design</a>
-									</h4>
-
-									<!--Post meta-->
-									<div class="post-meta t-center pt-10 pb-10">
-										<ul class="clearfix">
-											<li class="date">10 Fev</li>
-											<li>
-												<i class="icon-user-1"></i>
-												<span>by
-													<a href="#"> admin</a>
-												</span>
-											</li>
-											<li>
-												<i class="icon-comment"></i>
-												<span>Comments
-													<a href="#"> (2)</a>
-												</span>
-											</li>
-										</ul>
-									</div>
-									<!--End post meta-->
-
-
-									<p class="pt-15 pb-20">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-
-
-									<a class="more" href="blog_single.html">read more
-										<span>&rarr;</span>
-									</a>
-
-
-								</div>
-								<!--End post details-->
-
-							</div>
-							<!--End post-->
-						</div>
-
-						<div class="col-md-4 col-sm-4  ">
-
-
-							<!--Post-->
-							<div class="post latest">
-								<!--Post media-->
-								<div class="post-media">
-									<img src="img/blog/3.jpg" alt="">
-								</div>
-								<!--End post media-->
-
-								<!--Post details-->
-								<div class="post-details latest pb-20">
-									<h4 class="uppercase pt-15 pb-15">
-										<a href="blog_single.html">Reading &amp; Blogging</a>
-									</h4>
-
-									<!--Post meta-->
-									<div class="post-meta t-center pt-10 pb-10">
-										<ul class="clearfix">
-											<li class="date">05 Sept</li>
-											<li>
-												<i class="icon-user-1"></i>
-												<span>by
-													<a href="#"> admin</a>
-												</span>
-											</li>
-											<li>
-												<i class="icon-comment"></i>
-												<span>Comments
-													<a href="#"> (2)</a>
-												</span>
-											</li>
-										</ul>
-									</div>
-									<!--End post meta-->
-
-
-									<p class="pt-15 pb-20">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-
-
-									<a class="more" href="blog_single.html">read more
-										<span>&rarr;</span>
-									</a>
-
-
-								</div>
-								<!--End post details-->
-
-							</div>
-							<!--End post-->
-						</div>
-
-					</div>
-
-
-				</div>
-				<!--End row-->
-
-
-				<!--Row-->
-				<div class="row">
-
-					<div class="col-sm-12 t-center">
-						<a class="but brd  white mt-80 mb-80 " href="blog.html">View All Blog Posts</a>
-					</div>
-
-				</div>
-				<!--End row-->
-
-			</div>
-			<!--End container-->
-
-		</div>
-		<!--End block content-->
-
-
-	</section>
-	<!--End blog section-->
 
 	<!--Contact section-->
 	<section id="contact" class="contact">
@@ -1330,7 +1054,7 @@
 				<div class="contact-overlay bg-grey-dark">
 
 					<div class="block-title mb-60">
-						<h2 class="title white">Send a Message</h2>
+						<h2 class="title white">Contact</h2>
 					</div>
 
 					<div class="block-form">
@@ -1339,7 +1063,7 @@
 
 							<fieldset class="pure-group">
 								<label for="name">Nom: </label>
-								<input  id="name" name="name" placeholder="John Doe" required />
+								<input id="name" name="name" placeholder="John Doe" required />
 							</fieldset>
 
 							<fieldset class="pure-group">
@@ -1364,7 +1088,7 @@
 
 
 
-							<button class="button-success pure-button button-xlarge but opc white">
+							<button class="mt-20 button-success pure-button button-xlarge but opc white" style="width:100%;">
 								<i class="icon-paper-plane"></i>&nbsp;Envoyer</button>
 
 
@@ -1557,7 +1281,6 @@
 	<script src="js/jquery.appear.min.js" type="text/javascript"></script>
 	<script src="js/timer.js" type="text/javascript"></script>
 	<script src="js/placeholders.min.js" type="text/javascript"></script>
-	<script src="js/instafeed.min.js" type="text/javascript"></script>
 	<script src="js/easing.js" type="text/javascript"></script>
 	<script src="js/jquery.ui.totop.min.js" type="text/javascript"></script>
 	<script src="js/script.js" type="text/javascript"></script>
@@ -1569,24 +1292,6 @@
 	<script>
 		(function ($) {
 			"use strict";
-
-
-
-			// Instagram feed setup
-
-			var instaFeed = new Instafeed({
-				get: 'user',
-				userId: '305801553',
-				accessToken: '305801553.1677ed0.3d872300c10c4ff687868875ee8abc5d',
-				limit: 5,
-				template: '<li><a href="{{link}}"><img src="{{image}}"/></a></li>'
-			});
-			instaFeed.run();
-
-
-
-
-
 
 			// Google map location
 

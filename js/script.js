@@ -7,8 +7,19 @@ $(document).ready(function(){
 
 // Sticky nav
 
+
 var header = $('.main-nav'),
     pos = header.offset();
+
+
+
+		// Section scroll 
+
+$('a.scroll').smoothScroll({
+	speed: 800,
+	offset: 0
+});
+
 
 $(window).scroll(function(){
 	if($(this).scrollTop() > pos.top-20 && header.hasClass('default')){
@@ -22,12 +33,7 @@ $(window).scroll(function(){
 	}
 });
 
-// Section scroll 
 
-$('a.scroll').smoothScroll({
-    speed: 800,
-    offset: -64
-});
 
 // Site slider 
 
@@ -63,129 +69,45 @@ for(var i = 0; i < backgroundImage.length; i++){
 	}
 }
 
-//particles 
 
-/* particlesJS('particles',
+//portfolio modal
 
-{
-  "particles": {
-	"number": {
-	  "value": 80,
-	  "density": {
-		"enable": true,
-		"value_area": 800
-	  }
-	},
-	"color": {
-	  "value": "#ffffff"
-	},
-	"shape": {
-	  "type": "circle",
-	  "stroke": {
-		"width": 0,
-		"color": "#000000"
-	  },
-	  "polygon": {
-		"nb_sides": 5
-	  },
-	  "image": {
-		"src": "img/github.svg",
-		"width": 100,
-		"height": 100
-	  }
-	},
-	"opacity": {
-	  "value": 0.5,
-	  "random": false,
-	  "anim": {
-		"enable": false,
-		"speed": 1,
-		"opacity_min": 0.1,
-		"sync": false
-	  }
-	},
-	"size": {
-	  "value": 5,
-	  "random": true,
-	  "anim": {
-		"enable": false,
-		"speed": 40,
-		"size_min": 0.1,
-		"sync": false
-	  }
-	},
-	"line_linked": {
-	  "enable": true,
-	  "distance": 150,
-	  "color": "#ffffff",
-	  "opacity": 0.4,
-	  "width": 1
-	},
-	"move": {
-	  "enable": true,
-	  "speed": 6,
-	  "direction": "none",
-	  "random": false,
-	  "straight": false,
-	  "out_mode": "out",
-	  "attract": {
-		"enable": false,
-		"rotateX": 600,
-		"rotateY": 1200
+
+/* copy loaded thumbnails into carousel */
+$('.row .thumbnail').on('load', function() {
+	
+  }).each(function(i) {
+	if(this.complete) {
+		var item = $('<div class="item"></div>');
+	  var itemDiv = $(this).parents('div');
+	  var title = $(this).parent('a').attr("title");
+	  
+	  item.attr("title",title);
+		$(itemDiv.html()).appendTo(item);
+		item.appendTo('.carousel-inner'); 
+	  if (i==0){ // set first item active
+	   item.addClass('active');
 	  }
 	}
-  },
-  "interactivity": {
-	"detect_on": "canvas",
-	"events": {
-	  "onhover": {
-		"enable": true,
-		"mode": "repulse"
-	  },
-	  "onclick": {
-		"enable": true,
-		"mode": "push"
-	  },
-	  "resize": true
-	},
-	"modes": {
-	  "grab": {
-		"distance": 400,
-		"line_linked": {
-		  "opacity": 1
-		}
-	  },
-	  "bubble": {
-		"distance": 400,
-		"size": 40,
-		"duration": 2,
-		"opacity": 8,
-		"speed": 3
-	  },
-	  "repulse": {
-		"distance": 200
-	  },
-	  "push": {
-		"particles_nb": 4
-	  },
-	  "remove": {
-		"particles_nb": 2
-	  }
-	}
-  },
-  "retina_detect": true,
-  "config_demo": {
-	"hide_card": false,
-	"background_color": "#b61924",
-	"background_image": "",
-	"background_position": "",
-	"background_repeat": "no-repeat",
-	"background_size": "contain"
-  }
-}
-
-); */
-
+  });
+  
+  /* activate the carousel */
+  $('#modalCarousel').carousel({interval:false});
+  
+  /* change modal title when slide changes */
+  $('#modalCarousel').on('slid.bs.carousel', function () {
+	$('.modal-title').html($(this).find('.active').attr("title"));
+  })
+  
+  /* when clicking a thumbnail */
+  $('.row .thumbnail').click(function(){
+	  var idx = $(this).parents('div').index();
+		var id = parseInt(idx);
+		$('#myModal').modal('show'); // show the modal
+	  $('#modalCarousel').carousel(id); // slide carousel to selected
+		
+  });
+  
 //Portfolio setup 
 
 $('.popup').magnificPopup({
