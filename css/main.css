@@ -744,15 +744,17 @@ a.mobile-btn{
 
 
 .testi-details .td blockquote {
-    font-size: 14px;
+    font-size: 20px;
     line-height: 20px;
 	color:#ffffff;
+	margin-bottom: 40px !important;
 }
 
 
 .testi-details .td h6 {
     color: #ffffff;
 	text-transform:uppercase;
+	font-size:20px;
 }
 
 
@@ -762,6 +764,7 @@ a.mobile-btn{
 	display:block;
 	text-transform:none;
 	color:#ffffff;
+	font-size:20px;
 }
 
 
@@ -1922,6 +1925,18 @@ ul.socials.round.pb-20{
 	
 	}
 
+	.testi-details .td h6{
+		font-size: 10px;
+		line-height: 15px;
+	
+	}
+
+	.testi-details .td span{
+		font-size: 10px;
+		line-height: 15px;
+	
+	}
+
 	
 }
 
@@ -1998,7 +2013,16 @@ ul.socials.round.pb-20{
 		line-height: 14px;
 	
 	}
-
+	.testi-details .td h6{
+		font-size: 10px;
+		line-height: 15px;
+	
+	}
+	.testi-details .td span{
+		font-size: 10px;
+		line-height: 15px;
+	
+	}
 	
 }
 
